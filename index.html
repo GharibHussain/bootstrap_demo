@@ -53,7 +53,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> 
 
     <!-- main image & intro text -->
     <section id="intro">
@@ -227,6 +227,43 @@
                             <small>Review by Ali</small>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact form -->
+    <!-- form-control, form-label, form-select, input-group, input-group-text -->
+    <section id="contact">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Get in Touch</h2>
+                <p class="lead">Questions to ask? Fill out the form to contact me directly...</p>
+            </div>
+
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-6">
+                    <form>
+                        <lable for="email" class="form-label">Email address:</lable>
+                        <input type="email" class="form-control" id="email" placeholder="mario@example.com">
+                        
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="e.g. Mario">
+                    
+                        <label for="subject" class="form-label">What is your question about?</label>
+                        <select id="subject" class="form-select">
+                            <option value="pricing">Pricing query</option>
+                            <option value="content">Content query</option>
+                            <option value="other">Other query</option>
+                        </select>
+
+                        <div class="form-floating mb-4 mt-5">
+                            <textarea id="query" class="form-control" style="height: 140px;"></textarea>
+                            <label for="query">Your query...</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-secondary">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
