@@ -245,17 +245,33 @@
                 <div class="col-lg-6">
                     <form>
                         <lable for="email" class="form-label">Email address:</lable>
-                        <input type="email" class="form-control" id="email" placeholder="mario@example.com">
-                        
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-fill"></i>
+                            </span>
+                            <input type="email" class="form-control" id="email" placeholder="mario@example.com">
+                        </div>
+                       
                         <label for="name" class="form-label">Name:</label>
-                        <input type="text" class="form-control" id="name" placeholder="e.g. Mario">
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-person-fill"></i>
+                            </span>
+                            <input type="text" class="form-control" id="name" placeholder="e.g. Mario">
+                        </div>
+                        
                     
                         <label for="subject" class="form-label">What is your question about?</label>
-                        <select id="subject" class="form-select">
-                            <option value="pricing">Pricing query</option>
-                            <option value="content">Content query</option>
-                            <option value="other">Other query</option>
-                        </select>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-dots-fill"></i>
+                            </span>
+                            <select id="subject" class="form-select">
+                                <option value="pricing">Pricing query</option>
+                                <option value="content">Content query</option>
+                                <option value="other">Other query</option>
+                            </select>
+                        </div>
 
                         <div class="form-floating mb-4 mt-5">
                             <textarea id="query" class="form-control" style="height: 140px;"></textarea>
